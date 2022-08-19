@@ -20,6 +20,7 @@
   --color-grey-6:#12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
+  --span: rgb(221, 169, 27);
 }
 
 .light-mode {
@@ -39,7 +40,7 @@
 body {
   background-color: var(--color-primary);
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 17px;
   color: var(--color-white);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -65,7 +66,7 @@ section {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 3rem 6rem;
+  padding: 3rem 12rem;
 }
 
 .section {
@@ -170,8 +171,8 @@ section {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,7 +263,7 @@ section {
 
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
+  height: 80%;
   width: 68%;
   margin-left: 4rem;
   background-color: var(--color-black);
@@ -298,20 +299,34 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 10rem;
+  padding-right: 170px;
+  margin: auto;
 }
 
-.header-content .right-header .name {
-  font-size: 3rem;
+.header-content .right-header .hello {
+  color: var(--span);
+  font-size: 30px;
+}
+
+.header-content .right-header h1 {
+  font-size: 25px;
 }
 
 .header-content .right-header .name span {
   color: var(--color-secondary);
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.header-content .right-header h2 {
+  border-bottom: 2px solid var(--span);
 }
 
 .header-content .right-header p {
   margin: 1.5rem 0;
-  line-height: 1.5rem;
+  line-height: 25px;
+  font-size: 15px;
+  color: #b4b3b3;
 }
 
 .about-container {
@@ -319,8 +334,8 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  padding-top: 50px;
+  padding-bottom: 75px;
 }
 
 .about-container .right-about {
@@ -329,7 +344,7 @@ section {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   padding-right: 2rem;
-  grid-gap: 2rem;
+  grid-gap: 20px;
 }
 
 .about-container .right-about .about-item {
@@ -362,7 +377,7 @@ section {
 }
 
 .about-container .right-about .about-item .abt-text .large-text {
-  font-size: 3rem;
+  font-size: 45px;
   font-weight: 700;
   color: var(--color-secondary);
 }
@@ -371,7 +386,7 @@ section {
   padding-left: 3rem;
   position: relative;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-grey-1);
   letter-spacing: 2px;
 }
@@ -387,22 +402,33 @@ section {
 }
 
 .left-about {
-  padding-right: 5rem;
+  padding-right: 20px;
 }
 
 .left-about p {
   line-height: 2rem;
-  padding: 1rem;
   color: var(--color-grey-1);
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .left-about h4 {
-  font-size: 2rem;
+  font-size: 19px;
   text-transform: uppercase;
+  border-bottom: 1px solid var(--span);
+  margin-bottom: 15px;
+}
+
+.left-about h4 span {
+  font-size: 23px;
+  color: var(--color-secondary);
 }
 
 .about-stats {
   padding-bottom: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-stats .progress-bars {
@@ -480,6 +506,10 @@ section {
   width: 7%;
 }
 
+.about-stats .progress-bars .progress-bar .progress-con .progress .Figma {
+  width: 25%;
+}
+
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -494,7 +524,7 @@ section {
   top: 0;
   width: 40%;
   height: 1px;
-  background-color: var(--color-grey-5);
+  background-color: var(--span);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   position: absolute;
@@ -551,27 +581,39 @@ section {
 .timeline .timeline-item h5 {
   padding: 1rem 0;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .timeline .timeline-item h5 span {
   color: var(--color-grey-2);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: .8rem;
+  border-bottom: 1px solid var(--span);
+}
+
+.timeline .timeline-item h5 span:hover {
+  color: var(--color-secondary);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .timeline .timeline-item p {
   color: var(--color-grey-2);
+  font-size: 13px;
 }
 
 .port-text {
   padding: 2rem 0;
+  font-size: 18px;
   text-align: center;
 }
 
 .port-text span {
   color: var(--color-secondary);
+  font-size: 23px;
+  font-weight: 600;
 }
 
 .portfolios {
@@ -579,9 +621,8 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 3rem;
-  padding-right: 1rem;
+  grid-gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .portfolios .portfolio-item {
@@ -591,7 +632,7 @@ section {
 
 .portfolios .portfolio-item img {
   width: 100%;
-  height: 300px;
+  height: 290px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
@@ -678,7 +719,7 @@ section {
 }
 
 .portfolio-item:hover .hover-items {
-  opacity: 1;
+  opacity: .8;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -688,14 +729,14 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 3rem;
+  grid-gap: 1.3rem;
+  margin-top: 2.5rem;
 }
 
 .blogs .blog {
   position: relative;
   background-color: var(--color-grey-5);
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   -webkit-transition: all .4s ease-in-out;
@@ -725,8 +766,8 @@ section {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: all .4s ease-in-out;
@@ -734,13 +775,13 @@ section {
 }
 
 .blogs .blog .blog-text {
-  margin-top: -7px;
-  padding: 1.1rem;
+  margin-top: -5px;
+  padding: .7rem;
   border-top: 8px solid var(--color-secondary);
 }
 
 .blogs .blog .blog-text h4 {
-  font-size: 1.5rem;
+  font-size: 20px;
   margin-bottom: .7rem;
   cursor: pointer;
   -webkit-transition: all .4s ease-in-out;
@@ -753,8 +794,9 @@ section {
 
 .blogs .blog .blog-text p {
   color: var(--color-grey-2);
-  line-height: 2rem;
-  padding-bottom: 1rem;
+  line-height: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
 }
 
 .contact-content-con {
@@ -912,14 +954,12 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .main-btn {
   border-radius: 30px;
   color: inherit;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   border: 1px solid var(--color-secondary);
   display: -webkit-box;
@@ -931,10 +971,11 @@ section {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  margin-right: 23px;
 }
 
 .main-btn .btn-text {
-  padding: 0 2rem;
+  padding: 0 5px 0 15px;
 }
 
 .main-btn .btn-icon {
@@ -979,16 +1020,17 @@ section {
 .main-title h2 {
   position: relative;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .main-title h2 span {
   color: var(--color-secondary);
+  font-size: 40px;
 }
 
 .main-title h2 .bg-text {
-  padding-top: 2.5rem;
+  padding-top: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -999,7 +1041,7 @@ section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 6.3rem;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 600px) {
