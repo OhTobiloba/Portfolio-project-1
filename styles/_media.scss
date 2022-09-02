@@ -1,95 +1,122 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1200px) {
     // Header________________________________________________________________
+.header-content .left-header .image {
+    height: 65%;
+    width: 68%;
+    margin-left: 3.5rem;
+}
 
-      
-     
-// Portfolios________________________________________________________________
-        .portfolios {
-            grid-template-columns:1fr;
-            padding-bottom: 6rem;
-            margin-top: 1.5rem;
-        }
+.header-content .right-header {
+    padding-right: 120px;
+}
+    // ________________________________________________________________//
 
 
-    
-// About section________________________________________________________________
-    .about-container {
-        grid-template-columns: 1fr; 
-        .right-about {
-            grid-template-columns: 1fr ;
-            padding-top: 2.5rem;
-        }
 
-        .left-about {
-            padding-right: 0;
-            p {
-                padding-left: 0;
-            }
-        }
+    // ABOUT ME SECTION____________________________________________//
 
-    }
-// Timeline________________________________________________________________
-        .timeline {
-            grid-template-columns: 1fr ;
-            padding-bottom: 6rem;
-        }
+section {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 3rem 5rem;
+}
 
-        
-// Blogs________________________________________________________________
-        .blogs {
-            grid-template-columns: 1fr;
-            padding-bottom: 6rem;
-            margin-top: 1.5rem;
-        }
+    .about-container .right-about {
+    padding-right: 0rem;
+}
+    // ________________________________________________________________//
 
-        
 
-    .section {
-        padding: 2rem 2.5rem;
-    }
+    // PORTFOLIO____________________________________________//
 
-    .main-title {
-        h2 {
-            font-size: 2rem;
-            span {
-                font-size: 2.5rem;
-            }
-            .bg-text {
-                font-size: 3rem;
+    // ________________________________________________________________//
 
-            }
-        }
-    }
+
+    // BLOGS____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
+
+
+@media screen and (max-width: 930px){
+    // Header________________________________________________________________
+.header-content .right-header h2 {
+    font-size: 23px;
+}
+// ABOUT ME SECTION____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // PORTFOLIO____________________________________________//
+
+    .portfolios {
+    grid-template-columns: repeat(2, 1fr);
+}
+    // ________________________________________________________________//
+
+
+    // BLOGS____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
 
 }
 
-@media screen and (max-width: 1432px){
-    header {
-        padding: 0 !important;
-    }
-    .section {
-        padding: 7rem 11rem;
 
-    }
-.contact-content-con {
-            flex-direction: column;
-            .right-contact {
-                margin-left: 0;
-                margin-top: 2.5rem;
-            }
-        }
+@media screen and (max-width: 830px){
+    // Header________________________________________________________________
+.header-content .left-header .image {
+    height: 54%;
+    width: 78%;
+    margin-left: 2.5rem;
+}
+// ________________________________________________________________
 
-        .contact-content-con .right-contact .i-c-2 {
-            flex-direction: column;
-        }
-        .contact-content-con .right-contact .i-c-2 :last-child {
-            margin-left:0;
-            margin-top: 1.5rem;
-        }
+// ABOUT ME SECTION____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // PORTFOLIO____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // BLOGS____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
+
 }
 
-@media screen and (max-width: 1070px){
-    .about-container{
+
+
+@media screen and (max-width: 805px){
+    // Header________________________________________________________________
+// .main-btn .btn-text {
+//     padding: 0px 0px 0 10px;
+//     font-size: 14px;
+// }
+// ________________________________________________________________
+
+// ABOUT ME SECTION____________________________________________//
+.about-container{
         grid-template-columns: 1fr;
         .right-about {
             padding-top: 2.5rem;
@@ -104,23 +131,106 @@
     .blogs {
         grid-template-columns: 1fr 1fr;
     }
-
-    .main-title {
-        h2 {
-            font-size: 4rem;
-            span {
-                font-size: 4rem;
-            }
-            .bg-text {
-                font-size: 4.5rem;
-            }
-        }
-    }
+    // ________________________________________________________________//
 
 
-@media screen and (max-width: 970px){
-    
-    header {
+    // PORTFOLIO____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // BLOGS____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
+
+
+}
+
+
+@media screen and (max-width: 725px) {
+    // Header________________________________________________________________
+.header-content .right-header {
+    padding-right: 75px;
+}
+
+.header-content .left-header .image {
+    height: 70%;
+    width: 78%;
+    margin-left: 2rem;
+}
+
+
+.theme-btn {
+    width: 50px;
+    height: 50px;
+}
+.controls .control {
+    width: 35px;
+    height: 35px;
+}
+//________________________________________________________________
+
+// ABOUT ME SECTION____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // PORTFOLIO____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // BLOGS____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
+
+}
+
+
+@media screen and (max-width: 690px) {
+    .header-content .left-header .image {
+    height: 50%;
+}
+
+// ABOUT ME SECTION____________________________________________//
+
+  
+    // ________________________________________________________________//
+
+
+    // PORTFOLIO____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // BLOGS____________________________________________//
+.blogs {
+    grid-template-columns: 1fr;
+    margin-top: 3.5rem;
+}
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
+
+}
+
+@media screen and (max-width: 600px){
+    // Header________________________________________________________________
+     header {
         padding: 0;
     }
     header .right-header {
@@ -134,8 +244,8 @@
 
     .header-content {
         grid-template-columns: 1fr;
-        padding-bottom: 6rem;
-        padding-top: 3rem;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
     }
 
     .left-header {
@@ -144,29 +254,28 @@
         }
     }
 
+
+
     .right-header {
         grid-row: 1;
         width: 90%;
         margin: 0 auto;
         .name {
-            font-size: 2.5rem !important;
+            font-size: 17px !important;
         }
     }
 
+
+    .header-content .left-header {
+    padding-top: 25px;
+}
     .header-content .left-header .image {
         margin: 0 auto;
         width: 90%;
+        height: 100% !important;
     }
 
-    .portfolios {
-        grid-template-columns: 1fr 1fr;
-    }
 
-    
-
-    .section {
-        padding: 7rem 6rem;
-    }
     .controls {
         top:auto;
         bottom: 0;
@@ -178,26 +287,346 @@
         background-color: var(--color-grey-5);
         .control {
             margin: .6rem 1rem !important;
+            width:40px;
+        height:40px;
         }
     }
+
+    .btn-con {
+        justify-content: space-between;
+    }
+
+   
+    // ABOUT ME SECTION____________________________________________//
+
+    .btn-con {
+    justify-content: space-between;
+}
+.about-container .right-about {
+    grid-template-columns: 1fr;
 }
 
-@media screen and (max-width: 700px){
-    .section {
-        padding: 7rem 3rem;
+.about-stats .progress-bars {
+    grid-template-columns: 1fr;
+    
 }
-.about-stats {
-            .progress-bars {
-                grid-template-columns: 1fr ;
-            }
-        }
-        .main-title {
-            h2 {
-                font-size: 3rem;
-            }
-            .bg-text {
-                font-size: 4rem;
-            }
-        }
+
+.timeline {
+    grid-template-columns: 1fr;
+}
+    // ________________________________________________________________//
+
+
+    // PORTFOLIO____________________________________________//
+.portfolios {
+    grid-template-columns: 1fr;
+}
+    // ________________________________________________________________//
+
+
+    // BLOGS____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
+
+    
+
+    
+    
+
+
+      
+     
+// // Portfolios________________________________________________________________
+//         .portfolios {
+//             grid-template-columns:1fr;
+//             padding-bottom: 6rem;
+//             margin-top: 1.5rem;
+//         }
+
+
+    
+// // About section________________________________________________________________
+//     .about-container {
+//         grid-template-columns: 1fr; 
+//         .right-about {
+//             grid-template-columns: 1fr ;
+//             padding-top: 2.5rem;
+//         }
+
+//         .left-about {
+//             padding-right: 0;
+//             p {
+//                 padding-left: 0;
+//             }
+//         }
+
+//     }
+// // Timeline________________________________________________________________
+//         .timeline {
+//             grid-template-columns: 1fr ;
+//             padding-bottom: 6rem;
+//         }
+
+        
+// // Blogs________________________________________________________________
+//         .blogs {
+//             grid-template-columns: 1fr;
+//             padding-bottom: 6rem;
+//             margin-top: 1.5rem;
+//         }
+
+        
+
+//     .section {
+//         padding: 2rem 2.5rem;
+//     }
+
+//     .main-title {
+//         h2 {
+//             font-size: 2rem;
+//             span {
+//                 font-size: 2.5rem;
+//             }
+//             .bg-text {
+//                 font-size: 3rem;
+
+//             }
+//         }
+//     }
 
 }
+
+@media screen and (max-width: 475px){
+    // Header________________________________________________________________
+    .header-content .left-header {
+    padding-top: 25px;
+}
+.header-content .left-header .image {
+    height: 100%;
+}
+
+// ________________________________________________________________
+
+// ABOUT ME SECTION____________________________________________//
+
+section {
+    padding: 3rem 1rem;
+}
+.timeline .timeline-item {
+    margin-left: 20px;
+    padding-left: 25px;
+}
+
+
+.timeline .timeline-item .tl-icon {
+    left: -19px;
+    width: 35px;
+    height: 35px;
+}
+    // ________________________________________________________________//
+
+
+    // PORTFOLIO____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // BLOGS____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
+}
+
+
+
+@media screen and (max-width: 375px){
+    .controls {
+        top:auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left:50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control {
+            margin: .6rem 0.5rem !important;
+        }
+    }
+
+    // ABOUT ME SECTION____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // PORTFOLIO____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // BLOGS____________________________________________//
+
+    // ________________________________________________________________//
+
+
+    // CONTACT ME____________________________________________//
+
+    // ________________________________________________________________//
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 1432px){
+//     header {
+//         padding: 0 !important;
+//     }
+//     .section {
+//         padding: 7rem 11rem;
+
+//     }
+// .contact-content-con {
+//             flex-direction: column;
+//             .right-contact {
+//                 margin-left: 0;
+//                 margin-top: 2.5rem;
+//             }
+//         }
+
+//         .contact-content-con .right-contact .i-c-2 {
+//             flex-direction: column;
+//         }
+//         .contact-content-con .right-contact .i-c-2 :last-child {
+//             margin-left:0;
+//             margin-top: 1.5rem;
+//         }
+// }
+
+// @media screen and (max-width: 1070px){
+//     .about-container{
+//         grid-template-columns: 1fr;
+//         .right-about {
+//             padding-top: 2.5rem;
+//         }
+//     }
+
+//     .portfolios {
+//         grid-template-columns: 1fr 1fr;
+//     }
+    
+//     }
+//     .blogs {
+//         grid-template-columns: 1fr 1fr;
+//     }
+
+//     .main-title {
+//         h2 {
+//             font-size: 4rem;
+//             span {
+//                 font-size: 4rem;
+//             }
+//             .bg-text {
+//                 font-size: 4.5rem;
+//             }
+//         }
+//     }
+
+
+// @media screen and (max-width: 970px){
+    
+//     header {
+//         padding: 0;
+//     }
+//     header .right-header {
+//         padding: 0 !important;
+//     }
+
+//     .theme-btn {
+//         width: 50px;
+//         height: 50px;     
+//     }
+
+//     .header-content {
+//         grid-template-columns: 1fr;
+//         padding-bottom: 6rem;
+//         padding-top: 3rem;
+//     }
+
+//     .left-header {
+//         .h-shape {
+//             display: none;
+//         }
+//     }
+
+//     .right-header {
+//         grid-row: 1;
+//         width: 90%;
+//         margin: 0 auto;
+//         .name {
+//             font-size: 2.5rem !important;
+//         }
+//     }
+
+//     .header-content .left-header .image {
+//         margin: 0 auto;
+//         width: 90%;
+//     }
+
+//     .portfolios {
+//         grid-template-columns: 1fr 1fr;
+//     }
+
+    
+
+//     .section {
+//         padding: 7rem 6rem;
+//     }
+//     .controls {
+//         top:auto;
+//         bottom: 0;
+//         flex-direction: row;
+//         justify-content: center;
+//         left:50%;
+//         transform: translateX(-50%);
+//         width: 100%;
+//         background-color: var(--color-grey-5);
+//         .control {
+//             margin: .6rem 1rem !important;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 700px){
+//     .section {
+//         padding: 7rem 3rem;
+// }
+// .about-stats {
+//             .progress-bars {
+//                 grid-template-columns: 1fr ;
+//             }
+//         }
+//         .main-title {
+//             h2 {
+//                 font-size: 3rem;
+//             }
+//             .bg-text {
+//                 font-size: 4rem;
+//             }
+//         }

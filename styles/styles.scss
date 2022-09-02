@@ -154,8 +154,8 @@ section {
 .theme-btn {
     top: 5%;
     right: 3%;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: var(--color-grey-4);
     cursor:pointer;
@@ -169,7 +169,7 @@ section {
         transform: translateY(-3px);
     }
     i {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: var(--color-grey-2);
         pointer-events: none;
     }
@@ -255,12 +255,13 @@ section {
         span {
             color: var(--color-secondary);
             font-size: 40px;
-            line-height: 40px;
+            line-height: 30px;
         }
     }
 
     h2 {
             border-bottom:2px solid var(--span);
+            line-height: 25px;
         }
     p {
         margin: 1.5rem 0;
@@ -610,7 +611,7 @@ section {
             transition: all .4s ease-in-out;
         }
         .blog-text{
-            margin-top:-5px;
+             margin-top:-7px;
             padding:.7rem;
             border-top:8px solid var(--color-secondary);
             h4 {
@@ -633,23 +634,41 @@ section {
 }
 
 // contact section
+.contact-container {
+    .main-title {
+    .bg-text {
+        padding-top: 5px;
+}
+    }
 .contact-content-con {
     display: flex;
-    padding-top: 0rem;
+    padding-top: 50px;
     .left-contact {
         flex: 2;
         h4 {
-            margin-top:1rem;
-            font-size: 2rem;
+            margin-top:7px;
+            font-size: 18px;
             text-transform: uppercase;
+            text-align: center;
+            span {
+                border-bottom: 1px solid var(--span);
+            }
         }
         p {
-            margin: 1rem 0;
-            line-height: 2rem;
+            margin: 20px 0;
+            line-height: 20px;
+            font-size: 14px;
+            span {
+                color: var(--span);
+                font-weight: bold;
+                font-size: 16px;
+            }
+
         }
 
         .contact-info {
             .contact-item {
+                font-size: 13px;
                 display:flex;
                 justify-content: space-between;
                 align-items:center;
@@ -659,18 +678,21 @@ section {
                 }
                 .icon {
                     display: grid;
-                    grid-template-columns: 40px 1fr; 
+                    grid-template-columns: 30px 1fr; 
                     i {
                         display: flex;
                         align-items: center;
-                        font-size: 1.3rem;
+                        font-size: 20px;
                     }
                 }
             }
         }
+        .contact-icons {
+            padding: 0 auto;
+        }
         .contact-icon {
             display: flex;
-            margin-top: 2rem;
+            margin: 1.5rem;
         a {
             display:flex;
             align-items:center;
@@ -679,8 +701,8 @@ section {
             background-color: var(--color-grey-5);
             cursor:pointer;
             justify-content: center;
-            width:50px;
-            height:50px;
+            width:30px;
+            height:30px;
             margin: 0 .4rem;
             transition:all .4s ease-in-out;
             &:hover {
@@ -693,7 +715,7 @@ section {
                 display: flex;
                 justify-content:center;
                 align-items: center;
-                font-size: 1.3rem;
+                font-size: 15px;
 
             }
             } 
@@ -701,13 +723,13 @@ section {
     }
     .right-contact {
         flex:3;
-        margin-left: 3rem;
+        margin-left: 25px;
         .input-control {
-            margin: 1.5rem 0;
+            margin: 0.8rem 1rem;
             input, textarea {
-                border-radius:30px;
+                border-radius:10px;
                 font-weight: inherit;
-                font-size: inherit;
+                font-size: 14px;
                 font-family: inherit;
                 padding:  .8rem 1.1rem;
                 outline:none;
@@ -717,28 +739,22 @@ section {
                 color: var(--color-white);
                 resize: none;
             }
+
+            textarea {
+                margin-bottom: 20px;
+            }
         }
         .i-c-2 {
             display:flex;
             :last-child {
-                margin-left: 1.5rem;
+                margin-left: 1rem;
             }
         }
         .submit-btn {
             display: flex;
             justify-content: flex-start;
-        }
-    }
-}
-
-// independent component
-.btn-con {
-    display: flex;
-    // justify-content: space-between;
-}
-
-.main-btn {
-    border-radius:30px;
+            .submitBtn {
+                border-radius:30px;
     color: inherit;
     font-weight: 500;
     position: relative;
@@ -751,6 +767,7 @@ section {
     
     .btn-text {
         padding: 0 5px 0 15px;
+        font-size: 14px;
     }
 
     .btn-icon {
@@ -759,7 +776,69 @@ section {
         align-items: center;
         justify-content: center;
         border-radius:50%;
-        padding:1rem;
+        padding:12px;
+    }
+
+    &:active {
+        transform: translateY(-3px);
+    }
+
+    &::before{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        transform: translateX(100%);
+        transition: all .4s ease-out;
+        z-index: -1;
+
+    }
+    &:hover {
+        &::before{
+            width: 100%;
+            height:100%;
+            transform:translateX(0);
+            background-color: var(--color-secondary);
+        }
+    }
+
+}
+            }
+        }
+    }
+}
+
+
+// independent component
+.btn-con {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.main-btn {
+    border-radius:30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items:center;
+    overflow:hidden;
+    margin-right: 23px;
+    
+    .btn-text {
+        padding: 0 5px 0 15px;
+        font-size: 14px;
+    }
+
+    .btn-icon {
+        background-color: var(--color-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:50%;
+        padding:12px;
     }
     &::before{
         content:'';
