@@ -100,7 +100,12 @@ section {
 
 
     // CONTACT ME____________________________________________//
-
+    .contact-container .contact-content-con .left-contact {
+    padding: 0 40px;
+}
+.contact-container .contact-content-con {
+    flex-direction: column;
+}
     // ________________________________________________________________//
 
 }
@@ -330,7 +335,30 @@ section {
 
 
     // CONTACT ME____________________________________________//
+    section {
 
+    padding: 3rem 2rem;
+}
+.contact-container .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+}
+
+ .contact-content-con .right-contact .i-c-2 :last-child {
+            margin-left: 0 !important;
+            margin-top: 1rem;
+        }
+
+.contact-container .contact-content-con .right-contact .input-control input, .contact-container .contact-content-con .right-contact .input-control textarea {
+    margin: 1rem 0;
+}
+
+.contact-container .contact-content-con {
+    padding-right: 20px;
+}
+
+.contact-container .contact-content-con .left-contact {
+    padding: 0px;
+}
     // ________________________________________________________________//
 
     
@@ -479,7 +507,9 @@ section {
 
 
     // CONTACT ME____________________________________________//
-
+.contact-container .contact-content-con .right-contact {
+    margin-left: -5px;
+}
     // ________________________________________________________________//
 
 
