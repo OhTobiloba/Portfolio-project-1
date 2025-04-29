@@ -118,10 +118,11 @@ section {
  .chat {
     position: fixed;
     bottom: 1.5rem;
-    left: 1.5rem;
-    background-color: none;
-    width: 5rem;
-    height: 5rem;
+    right: 1.5rem;
+    background-color: white;
+    color: var(--color-secondary);
+    width: 6rem;
+    height: 6rem;
     // padding: 2rem;
     border-radius: 50%;
     display: flex;
@@ -134,7 +135,8 @@ section {
 
 
     i {
-        font-size: 3rem;
+        font-size: 4.5rem;
+        // color: white;
     }
 
    
@@ -921,7 +923,7 @@ section {
 }
 
 .main-btn {
-    border-radius:24px;
+    border-radius: 7px;
     // padding: .7rem  2rem;
     color: inherit;
     font-weight: 600;
