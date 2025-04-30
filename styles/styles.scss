@@ -132,15 +132,24 @@ section {
     // border: 3rem solid #10b418;
     z-index: 999;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: bounce 1s infinite;
+
 
 
     i {
         font-size: 4.5rem;
         // color: white;
     }
-
-   
 }
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* adjust bounce height */
+    }
+  }
 
 
 
