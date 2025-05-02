@@ -1093,8 +1093,8 @@ section {
   }
   .left-header {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 2rem 0;
+    margin: 1rem 0;
   }
   .right-header {
     display: flex;
@@ -1127,6 +1127,16 @@ section {
 
 .header-content .right-header .name {
   text-align: center;
+}
+
+.chat {
+  right: 0.5rem;
+  bottom: 0.5rem;
+  background-color: transparent;
+  padding: 0;
+}
+.chat i {
+  font-size: 3rem;
 }
 
 .contact-container .contact-content-con .right-contact {

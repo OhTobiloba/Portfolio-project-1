@@ -505,8 +505,9 @@ section {
     .left-header {
         width: 100%;
         // background-color: red;
-        padding: 0;
-        margin: 0;
+        padding: 2rem 0;
+        
+        margin: 1rem 0;
     }
 
     .right-header {
@@ -556,6 +557,17 @@ section {
     .header-content .right-header .name {
         text-align: center;
     }
+
+    .chat {
+        right: .5rem;
+        bottom: .5rem;
+        background-color: transparent;
+        padding: 0;
+
+        i {
+            font-size: 3rem;
+    }
+}
 
     // ABOUT ME SECTION____________________________________________//
 
