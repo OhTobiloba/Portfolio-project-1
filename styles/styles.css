@@ -1091,6 +1091,11 @@ section {
     align-items: center;
     justify-content: center;
   }
+  .left-header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   .right-header {
     display: flex;
     align-items: center;
@@ -1109,6 +1114,19 @@ section {
   border-radius: 50%;
   width: 20rem;
   height: 20rem;
+}
+
+.header-content .left-header {
+  padding: 0;
+}
+
+.header-content .right-header {
+  padding: 0;
+  width: 90%;
+}
+
+.header-content .right-header .name {
+  text-align: center;
 }
 
 .contact-container .contact-content-con .right-contact {
