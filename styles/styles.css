@@ -1029,9 +1029,6 @@ section {
   .right-header .name {
     font-size: 17px !important;
   }
-  .header-content .left-header {
-    padding-top: 25px;
-  }
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
@@ -1171,7 +1168,7 @@ section {
   .header-content .left-header .image img {
     border-radius: 50%;
     width: 17rem;
-    height: 17rem;
+    height: 20rem;
   }
 }
 .contact-container .contact-content-con .right-contact {
