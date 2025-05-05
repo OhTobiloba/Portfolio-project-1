@@ -1,13 +1,20 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px){
     // Header________________________________________________________________
 .header-content .left-header .image {
-    height: 65%;
-    width: 68%;
-    margin-left: 3.5rem;
+    // height: 65%;
+    // width: 68%;
+    // margin-left: 3.5rem;
+
+    img {
+        width: 20rem;
+        height: 20rem;
+    }
 }
 
 .header-content .right-header {
-    padding-right: 120px;
+    // padding-right: 120px;
+    // width: 100%;
+    padding: 0;
 }
     // ________________________________________________________________//
 
@@ -26,6 +33,19 @@ section {
 
     .about-container .right-about {
     padding-right: 0rem;
+}
+
+
+.right-header {
+    // width: 100%;
+
+    h1:nth-child(2) {
+        margin-bottom: 1rem;
+    }
+
+    .name {
+        font-size: 17px !important;
+    }
 }
     // ________________________________________________________________//
 
@@ -49,6 +69,10 @@ section {
     // Header________________________________________________________________
 .header-content .right-header h2 {
     font-size: 23px;
+}
+
+.header-content .right-header p{
+    font-size: 15px;
 }
 // ABOUT ME SECTION____________________________________________//
 
@@ -75,12 +99,46 @@ section {
 }
 
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 850px){
     // Header________________________________________________________________
 .header-content .left-header .image {
     height: 54%;
     width: 78%;
     margin-left: 2.5rem;
+}
+
+
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // grid-template-columns: 1fr;
+    // padding-bottom: 4rem;
+    // padding-top: 2rem;
+}
+
+.left-header {
+    width: 100%;
+    // background-color: red;
+    padding: 2rem 0;
+    
+    margin: 1rem 0
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+    text-align: center;
+    padding: 0;
+    h1 {
+        text-align: center;
+        margin-inline: auto;
+    }
 }
 // ________________________________________________________________
 
@@ -157,10 +215,10 @@ section {
 }
 
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 755px){
     // Header________________________________________________________________
 .header-content .right-header {
-    padding-right: 75px;
+    // padding-right: 75px;
 }
 
 .header-content .left-header .image {
@@ -177,6 +235,20 @@ section {
 .controls .control {
     width: 35px;
     height: 35px;
+}
+
+
+.chat {
+    right: .2rem;
+    bottom: .5rem;
+    background-color: transparent;
+    padding: 0;
+    width: 5rem;
+    height: 5rem;
+
+    i {
+        font-size: 2.5rem;
+}
 }
 //________________________________________________________________
 
@@ -206,6 +278,9 @@ section {
     .header-content .left-header .image {
     height: 50%;
 }
+
+
+
 
 // ABOUT ME SECTION____________________________________________//
 
@@ -250,12 +325,13 @@ section {
     .header-content {
         grid-template-columns: 1fr;
         padding-bottom: 4rem;
-        padding-top: 2rem;
+        // padding-top: 2rem;
     }
 
     .left-header {
+        margin-top: 0;
         .h-shape {
-            display: none;
+            // display: none;
         }
     }
 
@@ -476,7 +552,7 @@ section {
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .controls {
         top:auto;
         bottom: 0;
@@ -507,7 +583,7 @@ section {
         // background-color: red;
         padding: 2rem 0;
         
-        margin: 1rem 0
+        margin: 1rem 0;
     }
 
     .right-header {
@@ -527,6 +603,32 @@ section {
         flex-direction: column;
         // background-color: red;
     }
+
+
+    .header-content .left-header {
+        padding: 0;
+   }
+
+   .header-content .right-header {
+       padding: 0;
+       width: 90%;
+   }
+
+   .header-content .right-header .name {
+       margin-inline: auto;
+   }
+
+   .chat {
+       right: .2rem;
+       bottom: .5rem;
+       background-color: transparent;
+       padding: 0;
+       width: 5rem;
+       height: 5rem;
+
+       i {
+           font-size: 2.5rem;
+   }
 }
 
 
@@ -544,29 +646,6 @@ section {
     // object-position: center 1%;
     }
 
-
-    .header-content .left-header {
-         padding: 0;
-    }
-
-    .header-content .right-header {
-        padding: 0;
-        width: 90%;
-    }
-
-    .header-content .right-header .name {
-        text-align: center;
-    }
-
-    .chat {
-        right: .5rem;
-        bottom: .5rem;
-        background-color: transparent;
-        padding: 0;
-
-        i {
-            font-size: 3rem;
-    }
 }
 
     // ABOUT ME SECTION____________________________________________//
